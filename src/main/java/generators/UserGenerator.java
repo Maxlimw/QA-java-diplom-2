@@ -23,7 +23,6 @@ public class UserGenerator {
         return new UserCredentials(email, password);
     }
 
-    // Generate UserData with one missing field
     public static UserData getUserDataWithMissingField(UserField emptyField) {
         String email = faker.internet().emailAddress();
         String password = faker.internet().password(8, 16);
